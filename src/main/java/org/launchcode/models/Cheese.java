@@ -11,7 +11,7 @@ import java.util.List;
 @Entity
 public class Cheese {
 
-    @ManyToMany(mappedBy = "cheeses", cascade = CascadeType.ALL)
+    @ManyToMany(mappedBy = "cheeses")
     private List<Menu> menus;
 
     @Id
